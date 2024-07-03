@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Staking
 
-Actuator Token Staking provides token holders with a flexible and beneficial way to earn rewards in HTTs. To participate in staking, token holders must stake their ACTR into the Actuator token contract. During this process, stakers will select a designated HEX day, determining the type of Hex Time Token (HTT) rewards they are eligible to receive.
+Actuator Token Staking provides token holders with a flexible and beneficial way to earn rewards in HTTs. To participate in staking, token holders must stake their ACTR into the Actuator token contract. During this process, stakers will select a designated HEX day, determining the type of HEX Time Token (HTT) rewards they are eligible to receive.
 
 ### Choosing the HEX Day.
 

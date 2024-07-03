@@ -23,7 +23,7 @@ To unlock the stake value and monetize your stake at a fair price while retainin
 ### Why am I not allowed to mint tokens against rewards earned in the final 10% of the stake's life?
 Up to 10% of the rewards for a given stake are reserved in the event the staker fails to end stake on time. In which case, the rewards instead go to the user who chooses to end the stake. Since HTT holders depend on 'stakeEnd' being invoked in a timely fashion, it's important there is minimal friction to ending a stake in the event the original staker fails to do so. 10% is chosen as it will very likely offset any gas costs associated with end staking. 
 ### Is there a late redemption penalty?
-Similar to HEX stakes, there is a 14-day period where there is no penalty and tokens can be redeemed 1:1 for HEX. However, after 14 days you may be subject to penalties. Given Hex Time Tokens (HTT) are backed by HEX stakes, any stakes that are not unlocked after 14 days begin incurring penalties (enforced by the HEX protocol) and thus the HTTs may experience depreciation as well. The exact amount of penalties will depend on how many underlying stakes are in penalty. 
+Similar to HEX stakes, there is a 14-day period where there is no penalty and tokens can be redeemed 1:1 for HEX. However, after 14 days you may be subject to penalties. Given HEX Time Tokens (HTT) are backed by HEX stakes, any stakes that are not unlocked after 14 days begin incurring penalties (enforced by the HEX protocol) and thus the HTTs may experience depreciation as well. The exact amount of penalties will depend on how many underlying stakes are in penalty. 
 ### if I only mint and sell a portion of my stake, can I still collect any remaining principal/rewards at end stake?
 Yes, you retain full ownership to any remaining HEX proceeds from your stake assuming you end stake on time. 
 <!-- however each day you fail to end stake after maturity, and additional 1% of the stake rewards (up to 10%) goes to the end staker instead of the stake owner. This ensure stake owners can still collect their full rewards, while also protecting HTT holders who have claims on the stake's underlying HEX and may need to end stake themselves. -->
@@ -32,9 +32,9 @@ Since 1 HTT is redeemable for 1 HEX token at the designated redemption day, we c
 ### Why would one set the redemption day of minted HEX Time Tokens to a day greater than the underlying stake's end day?
 If there is no liquid trading pool for that given token's redemption day, users can choose a later day that matches a redemption day with a more liquid pool.
 ### When minting tokens whose redemption day is after the underlying stake's end day, why is the extractable HTT amount less than my total principal + accrued rewards?
-The further away redemption day is from the stake end day, the extractable amount decreases to account for the potential late end stake penalty enforced by the Hex protocol. The reason is because the Hex protocol begin penalizes stakes that fail to end stake starting 2 weeks after end day. While Actuator stakers can easily avoid this by timely ending their stake (like any other HEX stake or HSI), the Actuator system must assume worst case scenario that the original stake creator will fail to end stake and thus result in maximum penalties leading up to the redemption day of the minted tokens. This ensures all minted HTTs will be redeemable 1:1 for HEX on their designated redemption day.  
+The further away redemption day is from the stake end day, the extractable amount decreases to account for the potential late end stake penalty enforced by the HEX protocol. The reason is because the HEX protocol begin penalizes stakes that fail to end stake starting 2 weeks after end day. While Actuator stakers can easily avoid this by timely ending their stake (like any other HEX stake or HSI), the Actuator system must assume worst case scenario that the original stake creator will fail to end stake and thus result in maximum penalties leading up to the redemption day of the minted tokens. This ensures all minted HTTs will be redeemable 1:1 for HEX on their designated redemption day.  
 ### How is Actuator related to Hedron?
-In the same way a HSI is a wrapper around a Hex stake with added functionality, a Actuator stake is a wrapper around a HSI with added functionality.
+In the same way a HSI is a wrapper around a HEX stake with added functionality, a Actuator stake is a wrapper around a HSI with added functionality.
 ### If I extract HEX Time Tokens (HTT) from my stake and sell them, do I still own my stake? 
 You are now a partial owner of the stake and whoever holds the minted tokens effectively owns the rest of the stake. The HEX that you the staker can collect at end stake is lowered by the amount of HTTs minted.
 ### How many HEX Time Tokens (HTTs) can I extract from my stake?
@@ -50,11 +50,11 @@ Yes, since Actuator is a wrapper around Hedron, you can wrap your existing HSI t
 ### Who pays for the gas to end stakes that are backing HEX Time Tokens?
 Once end day arrives, anyone can end a stake including the staker. However, after 3 days without stakeEnd being called, each additional day that passes results in an additional 1% of the stake rewards (up to 10%) going towards the user who calls stakeEnd (instead of the original staker). This ensures that even if gas is high, end stakers will likely be fully reimbursed for gas costs (in HEX) if they wait.
 ### How is this different than Maximus?
-- Maxi tokens represent ownership over an indeterminate amount of Hex at a future date. HEX Time Tokens represent ownership over a determinate amount of HEX at a future date. i.e. 100 HTT-2500 is backed by exactly 100 HEX unlockable on day 2500. 
+- Maxi tokens represent ownership over an indeterminate amount of HEX at a future date. HEX Time Tokens represent ownership over a determinate amount of HEX at a future date. i.e. 100 HTT-2500 is backed by exactly 100 HEX unlockable on day 2500. 
 - Maxi tokens are priced inaccurately due to artificial supply constraints. While volatility is a benefit for many, if you're looking to buy/sell maxi tokens at a fair and predictable price, the volatility and price inefficiency is undesirable. Whereas Actuator avoids supply constraints by allowing for fluid creation of HEX Time Tokens ensuring the price is in line with HEX. 
 - Existing HSI owners cannot mint maxi tokens against their HSI. 
 ### what are Amplified Stakes?
-Amplified stakes are essentially levered HEX stakes which can be created through the Actuator protocol. Once a user creates a stake and extracts the HTTs, the can then go and sell the HTTs for HEX and re-stake the HEX and repeat this cycle. If HTTs are overpriced, then users take advantage of this mispricing and potentially achieve higher returns on the amplified Hex stakes. 
+Amplified stakes are essentially levered HEX stakes which can be created through the Actuator protocol. Once a user creates a stake and extracts the HTTs, the can then go and sell the HTTs for HEX and re-stake the HEX and repeat this cycle. If HTTs are overpriced, then users take advantage of this mispricing and potentially achieve higher returns on the amplified HEX stakes. 
 ### How does the ACTR token staking work and what are the benefits?
 ACTR token staking allows holders to earn rewards from the fees generated by HTT creation. Stakers choose a specific redemption day to stake against, and receive a pro-rata share of the fee imposed on HTT creation (1%) for that redemption day. There's a 90-day lock-up period, with an early unlock penalty starting at 100% and decreasing linearly to 0% over the lock-up period.
 ### Can I create HTTs with any redemption day, or are there restrictions?
@@ -90,13 +90,13 @@ Actuator enhances the HEX ecosystem by providing more liquidity options for stak
 
 
 <!-- ### What is a HEX maturity token (HTT)?
-An ERC20 token that can be redeemed 1:1 for HEX at the specified HEX day (i.e. the maturity day). The maturity day is visible in the token symbol. For example, a maturity token with symbol HTT-1926 is redeemable 1:1 for HEX on Hex day 1926.
+An ERC20 token that can be redeemed 1:1 for HEX at the specified HEX day (i.e. the maturity day). The maturity day is visible in the token symbol. For example, a maturity token with symbol HTT-1926 is redeemable 1:1 for HEX on HEX day 1926.
 ### How are HEX maturity tokens (HTT) minted?
 Anyone can mint HEX maturity tokens if they have created an HSI through Actuator. Users can mint HEX maturity tokens against their principal and any accrued rewards of the stake.
 ### How is the maturity day for a HEX maturity token (HTT) determined?
 The maturity is set by the minter and must be on or after the end stake day of its underlying stake. 
 ### Are HEX maturity tokens fungible?
-Only Hex maturity tokens that have a common maturity day are fungible.
+Only HEX maturity tokens that have a common maturity day are fungible.
 ### Are HEX maturity tokens with the same maturity but different underlying stakes fungible?
 Yes, so long at the maturity day of the HTTs are the same, they are the same ERC20 token.
 ### Can I still early end stake?
@@ -114,9 +114,9 @@ Yes, you retain full rights to any remaining HEX proceeds from your stake, howev
 ### Why would one set the maturity day of minted HEX maturity tokens to a date greater than the end stake day of the underlying stake?
 if there is no liquid trading pool for that given token's maturity, users can choose a later day that matches a maturity with a more liquid pool.
 ### When minting tokens whose maturity day is after the underlying stake's end day, why is the mintable HTT amount less than my total principal + accrued rewards?
-The further away the maturity day is from the stake end day, The mintable amount decreases to account for the potential late end stake penalty enforced by the Hex protocol. The reason is due to the fact that Hex protocol begin penalizes stakes that fail to end stake starting 2 weeks after end day. While Actuator stakers can easily avoid this by timely ending their stake (like any other HEX stake or HSI), the Actuator system must assume worst case scenario that the original stake creator will fail to end stake and thus result in maximum penalties leading up to the maturity day of the minted tokens. This ensures all minted HEX tokens for a given maturity will be redeemable 1:1 for HEX at maturity.  
+The further away the maturity day is from the stake end day, The mintable amount decreases to account for the potential late end stake penalty enforced by the HEX protocol. The reason is due to the fact that HEX protocol begin penalizes stakes that fail to end stake starting 2 weeks after end day. While Actuator stakers can easily avoid this by timely ending their stake (like any other HEX stake or HSI), the Actuator system must assume worst case scenario that the original stake creator will fail to end stake and thus result in maximum penalties leading up to the maturity day of the minted tokens. This ensures all minted HEX tokens for a given maturity will be redeemable 1:1 for HEX at maturity.  
 ### How is Actuator related to Hedron?
-In the same way a HSI is a wrapper around a Hex stake with added functionality, a Actuator stake is a wrapper around a HSI with added functionality
+In the same way a HSI is a wrapper around a HEX stake with added functionality, a Actuator stake is a wrapper around a HSI with added functionality
 ### How many HEX maturity tokens (HTTs) can I extract from my stake?
 Only your initially staked HEX + accrued HEX rewards. This ensures the quantity minted is never greater than the amount of HEX guaranteed to be available at end stake. 
 ### What additional features do Actuator stakes provide over HSIs
@@ -135,7 +135,7 @@ Once end day arrives, anyone can end a stake including the staker. However, each
 ### How would one know if a given maturity token is overpriced or underpriced
 ### what's the expected price of a given maturity token relative to HEX?
 ### how is this different from Maxi
-- maxi tokens represent ownership over an indeterminate amount of Hex at a future date. HEX maturity tokens represents ownership over a determinate amount of HEX at a future date. i.e. 100 HEX-2135 is backed by exactly 100 HEX unlockable on day 2135. 
+- maxi tokens represent ownership over an indeterminate amount of HEX at a future date. HEX maturity tokens represents ownership over a determinate amount of HEX at a future date. i.e. 100 HEX-2135 is backed by exactly 100 HEX unlockable on day 2135. 
 - maxi tokens are priced inaccurately due to artificial supply contraints. While volatility is a benefit for many, if you're looking to liquidate your maxi tokens at a certain date in the future, this number not desirable. Whereas Actuator allows for fluid creation of HEX maturity tokens ensuring the price is in line with HEX with a discount due to the time value of money. 
 - Existing HSI owners cannot mint maxi tokens against their HSI. 
 
@@ -146,7 +146,7 @@ Rewards accrued at the end of the stake life are less likely to benefit from mon
 ### Does this break the delayed gratification of HEX and the game theory of HEX
 Stakers can only mint HTT against the intrinsic value of their HEX stake and not value they haven't yet earned. i.e. you only get what you've earned. 
 ### arn't you just pulling buy pressure away from hex through these token?
-HTTs only exist as because of Hex stakes. every purchase of an HTT increases the incentive to create more stakes to create new supply of HTTs. Thus on net, the existence of HTTs increase the amount of staking and thus take more HEX more HEX to come off the market into long terms stakes. additionally, HTTs increase the incentive to stake longer and in larger amounts thus taking more HEX off the market and locking up for longer.
+HTTs only exist as because of HEX stakes. every purchase of an HTT increases the incentive to create more stakes to create new supply of HTTs. Thus on net, the existence of HTTs increase the amount of staking and thus take more HEX more HEX to come off the market into long terms stakes. additionally, HTTs increase the incentive to stake longer and in larger amounts thus taking more HEX off the market and locking up for longer.
 ### what drives the shape of the curve?
 the price of the HTT in the pools
 -->

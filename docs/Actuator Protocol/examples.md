@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Example 1 - Basic Actions
 - Create Stakes
-  - Bob creates a HEX stake instance through Actuator with a principal of 150 HEX, ending on Hex day 3000. Alice creates a stake with a principal of 600 HEX, ending on day 3000 as well.
+  - Bob creates a HEX stake instance through Actuator with a principal of 150 HEX, ending on HEX day 3000. Alice creates a stake with a principal of 600 HEX, ending on day 3000 as well.
 - Mint HEX Time Tokens
   - Both Alice and Bob immediately mint HEX-3000 in quantities equal to the size of their staked HEX (i.e. principal). Thus, Bob mints 150 HEX-3000 and Alice mints 600 HEX-3000. Resulting in a total of 750 HEX-3000 minted.
 - Mint HEX Time Tokens against new rewards
@@ -19,7 +19,7 @@ sidebar_position: 5
 
 ## Example 2 - Custom Redemption Day
 - Create Stake
-  - Bob creates a new HSI through Actuator with a principal of 150 HEX, ending on Hex day 1900. 
+  - Bob creates a new HSI through Actuator with a principal of 150 HEX, ending on HEX day 1900. 
 - Mint HEX Time Tokens
   - Bob wants to mint and sell HTT-1900 but there is no liquid trading pool to trade HTT-1900 in. There is, however, a liquid pool for HTT-2000.
   - Bob mints 150 HTT-2000 against his stake and sells 150 HTT-2000 into the trading pool.
@@ -37,7 +37,7 @@ sidebar_position: 5
 
 ## Example 3 - Community End Stake Incentive
 - Create Stake
-  - Bob creates a new HSI through Actuator with a principal of 150 HEX, ending on Hex day 3000. 
+  - Bob creates a new HSI through Actuator with a principal of 150 HEX, ending on HEX day 3000. 
 - Mint HEX Time Tokens
   - Bob mints 150 HTT-3000 against his stake and sends the 150 HTT-3000 to Alice.
 - End Stake
@@ -55,7 +55,7 @@ sidebar_position: 5
 
 ## Example 4 - Late Redemption 1
 - Create Stake
-  - Bob creates a new HSI through Actuator with a principal of 150 HEX, ending on Hex day 3000. 
+  - Bob creates a new HSI through Actuator with a principal of 150 HEX, ending on HEX day 3000. 
 - Mint HEX Time Tokens
   - Bob mints 150 HTT-3000 against his stake and sends the 150 HTT-3000 to Alice.
 - End Stake

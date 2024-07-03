@@ -12,9 +12,15 @@ const config = {
   favicon: 'img/Logo Icon_color.png',
 
   // Set the production url of your site here
-  url: 'https://docs.actuator.finance',
+  // url: 'https://docs.actuator.finance',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
+  // baseUrl: '/',
+
+  // url: 'https://actuator-finance.github.io',
+  // baseUrl: '/Actuator-Docs/',
+
+  url: 'https://docs.actuator.finance',
   baseUrl: '/',
 
   // GitHub pages deployment config.
