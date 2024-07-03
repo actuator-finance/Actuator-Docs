@@ -21,6 +21,9 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'actuator-finance', // Usually your GitHub org/user name.
   projectName: 'Actuator-Docs', // Usually your repo name.
+  // projectName: 'actuator-docs.github.io',
+
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
