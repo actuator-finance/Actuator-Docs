@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # Use Cases
-- Actuator Wrapped HSIs
+- Actuator Wrapped Stakes
   - Gain **instant liquidity on existing HSI** by delegating to Actuator and then minting HEX Time Tokens against the intrinsic stake value (i.e. staked HEX + HEX rewards to date)
   - Get **instant liquidity back on new HEX stakes** 
   - **Progressively liquidate** earned stake rewards for providing regular income stream
