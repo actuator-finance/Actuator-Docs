@@ -22,7 +22,7 @@ These tokens are intended to incentivize participation in the liquidity pools.
 
 ### Team Allocation
 
-25% (250,000,0000 ACTR) of the total token supply is reserved for the team to ensure long-term commitment and ongoing development support. This is distributed over three years and follows a similar schedule to the farming distribution to ensure team allocation never exceeds 25% at any point in time. This distribution is scheduled as follows:
+25% (250,000,0000 ACTR) of the total token supply is reserved for the team to ensure long-term commitment and ongoing development support. This is distributed over three years and follows a similar schedule to the farming distribution to ensure the team allocation never exceeds 25% at any point in time. This distribution is scheduled as follows:
 
 - **Year 1**: 116,000,000 tokens
 - **Year 2**: 83,000,000 tokens
