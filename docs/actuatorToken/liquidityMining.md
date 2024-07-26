@@ -21,12 +21,12 @@ In order to eliminate admin keys and minimize the attack surface, the farmable p
 There are several factors to consider when deciding which HTT redemption days, and weights to assign for the farms. On the one hand, we want to incentive liquidity across many HTT redemption days to ensure every common time horizon for HEX staking is covered (since HEX stakes back HTTs). On the other hand, we want maximal liquidity in each pool and don't want liquidity spread too thin. With these tradeoffs in mind, we've chosen to prioritize these 2 objectives: liquidity and natural Schelling points. Firstly, to maximize liquidity, we'll tend towards incentivizing as few farms as necessary (especially in the first year). Secondly, we want the choice of which HTT redemption days to be a natural Schelling point that's highly defensible and fair. For this reason, we've chosen redemption days that are evenly spaced and are round numbers that are easy to remember. Additionally, the longer the time to redemption the greater the rewards for that farm (like 'Longer Pays Better'). We believe the below farm schedule meets those objectives. 
 |        | YEAR 1 | YEAR 2 | YEAR 3 |
 |--------|--------|--------|--------|
-| HTT-3000 | 10%  | 5%     |        |
-| HTT-4000 |      | 15%    | 5%     |
-| HTT-5000 | 15%  | 20%    | 15%    |
+| HTT-3000 | 20%  | 10%     |        |
+| HTT-4000 |      | 15%    | 10%     |
+| HTT-5000 | 35%  | 20%    | 15%    |
 | HTT-6000 |      | 25%    | 20%    |
-| HTT-7000 | 75%  | 35%    | 25%    |
-| HTT-8000 |      |        | 35%    |
+| HTT-7000 | 50%  | 30%    | 25%    |
+| HTT-8000 |      |        | 30%    |
 
 
 <!-- ## Farmable Pools

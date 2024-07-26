@@ -153,8 +153,8 @@ the price of the HTT in the pools
 ### Why was the last 10% of stake rewards chosen as the reserve portion for the community end stake incentive?
 Rewards accrued at the end of the stake life are less likely to benefit from monetization than rewards accrued early on. 
 ### If no one is staking ACTR at a particular redemption day, is there still an HTT creation fee?
-No, HTTs can be created without a fee if there are no ACTR stakers for that redemption day. 
+No, the HTT creation fee is waived if there are no ACTR stakers for that redemption day. 
 ### Can I still mint my stake's Hedron?
 Yes, even if you've extracted HTTs against your stake, you can always mint any earned Hedron from your stake. 
-### Is the full intrinsic HEX value of my stake eligible for HTT collateral?
-Generally speaking, yes, however there are notable restrictions. HEX rewards earned in the final 10% of a stake's life are not eligible as reserved for the community end stake subsidy. Furthermore, HTTs whose maturities are set after end stake further decrease the eligible HEX collateral to account for the added possibility of late end stake penalty. 
+### Is the full intrinsic HEX value of my stake eligible as collateral for HTTs?
+Generally speaking, yes, however there are notable restrictions. HEX rewards earned in the final 10% of a stake's life are not eligible as they are reserved for the community end stake subsidy. Furthermore, HTTs whose maturities are set after end stake further decrease the eligible HEX collateral to account for the added possibility of late end stake penalty. 
