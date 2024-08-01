@@ -53,6 +53,8 @@ Once end day arrives, anyone can end a stake including the staker. However, afte
 - Maxi tokens represent ownership over an indeterminate amount of HEX at a future date. HEX Time Tokens represent ownership over a determinate amount of HEX at a future date. i.e. 100 HTT-2500 is backed by exactly 100 HEX unlockable on day 2500. 
 - Maxi tokens are priced inaccurately due to artificial supply constraints. While volatility is a benefit for many, if you're looking to buy/sell maxi tokens at a fair and predictable price, the volatility and price inefficiency is undesirable. Whereas Actuator avoids supply constraints by allowing for fluid creation of HEX Time Tokens ensuring the price is in line with HEX. 
 - Existing HSI owners cannot mint maxi tokens against their HSI. 
+- Maxi is socialized staking whereas Actuator enables personal control and flexibility over your own stakes. 
+
 ### what are Amplified Stakes?
 Amplified stakes are essentially levered HEX stakes which can be created through the Actuator protocol. Once a user creates a stake and extracts the HTTs, the can then go and sell the HTTs for HEX and re-stake the HEX and repeat this cycle. If HTTs are overpriced, then users take advantage of this mispricing and potentially achieve higher returns on the amplified HEX stakes. 
 ### How does the ACTR token staking work and what are the benefits?

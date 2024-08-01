@@ -87,12 +87,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/actuatorfinance',
-              },
-              {
                 label: 'Telegram',
                 href: 'https://t.me/actuatorfinance',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/actuatorfinance',
               },
               {
                 label: 'Youtube',
@@ -104,12 +104,25 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Website',
+                href: 'https://actuator.finance',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/actuator-finance',
               },
               {
                 label: 'Mail',
                 href: 'mailto:actuatorfinance@proton.me',
+              },
+            ],
+          },
+          {
+            title: 'Info',
+            items: [
+              {
+                label: 'Terms of Use',
+                href: 'https://www.actuator.finance/documents/Terms_of_Use.pdf',
               },
             ],
           },
