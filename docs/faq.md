@@ -7,9 +7,9 @@ sidebar_position: 3
 ### What is a HEX Time token (HTT)?
 An ERC20 token that can be redeemed 1:1 for HEX at the designated HEX day (i.e. redemption day). The redemption day is visible in the token symbol. For example, a HTT with  symbol HTT-3000 is redeemable 1:1 for HEX on day 3000.
 ### How are HEX Time Tokens (HTT) minted?
-Anyone can mint HEX Time Tokens if they have created/delegated an HEX Stake Instance (HSI) through Actuator. Users can mint HTT against their principal and any accrued rewards of the stake.
+Anyone can mint HEX Time Tokens if they have created/delegated a HEX Stake Instance (HSI) through Actuator. Users can mint HTTs against their principal and any accrued rewards of the stake.
 ### How is the redemption day for a HEX Time Token (HTT) determined?
-The redemption day is set by the minter and must be on or after the stake's end day of its underlying stake. 
+The redemption day is set by the minter and must be on or after the underling stake end day.
 ### Are HEX Time Tokens fungible (HTT)?
 HEX Time Tokens that have a common redemption day are fungible, even if they are backed by distinct stakes.
 ### Can I still early end stake?

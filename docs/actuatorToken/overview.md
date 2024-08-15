@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Overview
 
-The ACTR Token, which will serve as the revenue sharing token for Actuator, is designed to have limited supply and be resistant to manipulations. 
+The ACTR Token, which will serve as the revenue sharing token for Actuator, is designed to have deflationary supply and be resistant to manipulations. 
 
 <!-- ### Token Details:
 

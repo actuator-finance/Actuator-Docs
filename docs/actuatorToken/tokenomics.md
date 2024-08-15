@@ -22,19 +22,9 @@ These tokens are intended to incentivize participation in the liquidity pools.
 
 ### Team Allocation
 
-25% (250,000,0000 ACTR) of the total token supply is reserved for the team to ensure long-term commitment and ongoing development support. This is distributed over three years and follows a similar schedule to the farming distribution to ensure the team allocation never exceeds 25% at any point in time. This distribution is scheduled as follows:
+25% (250,000,0000 ACTR) of the total token supply is reserved for the team to ensure long-term commitment and ongoing development support. This amount is initially minted to the team address at contract launch, however, the team will immediately deposit 100% of tokens to to a "Time Lock" contract where the tokens are locked. From there, the ACTR tokens are gradually unlocked over the course of three years and follows same unlock schedule to as the farms. This ensures the team control of ACTR tokens never exceeds 25% of the circulating supply at any point in time. This distribution is scheduled as follows:
 
 - **Year 1**: 116,000,000 tokens
 - **Year 2**: 83,000,000 tokens
 - **Year 3**: 51,000,000 tokens
 
-<!-- ### Bug Bounties and Community Rewards
-
-The remaining 5% of the tokens are allocated for bug bounties and discretionary payouts to key community members. This allocation is detailed as follows:
-
-- **Immediate Access**: 50,000,000 tokens
-
-This pool is designed to reward community members who contribute significantly to the project's security and overall health through various engagements.
-
-
- -->
