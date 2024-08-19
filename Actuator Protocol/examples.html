@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">Examples | Actuator Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.actuator.finance/Actuator Protocol/examples"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Examples | Actuator Docs"><meta data-rh="true" name="description" content="Example 1 - Basic Actions"><meta data-rh="true" property="og:description" content="Example 1 - Basic Actions"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.actuator.finance/Actuator Protocol/examples"><link data-rh="true" rel="alternate" href="https://docs.actuator.finance/Actuator Protocol/examples" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.actuator.finance/Actuator Protocol/examples" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.6153e507.css">
-<script src="/assets/js/runtime~main.8b4835a6.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.cab2913c.js" defer="defer"></script>
 <script src="/assets/js/main.66c48ba8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,7 +18,7 @@
 </li>
 <li>Mint HEX Time Tokens<!-- -->
 <ul>
-<li>Both Alice and Bob immediately mint HEX-3000 in quantities equal to the size of their staked HEX (i.e. principal). Thus, Bob mints 150 HEX-3000 and Alice mints 600 HEX-3000. Resulting in a total of 750 HEX-3000 minted.</li>
+<li>Both Alice and Bob immediately mint HEX-3000 in quantities equal to the size of their staked HEX (i.e. principal). Thus, Bob mints 150 HEX-3000 and Alice mints 600 HEX-3000 resulting in a total of 750 HEX-3000 minted.</li>
 </ul>
 </li>
 <li>Mint HEX Time Tokens against new rewards<!-- -->
@@ -28,13 +28,13 @@
 </li>
 <li>Sale of HEX Time Tokens<!-- -->
 <ul>
-<li>Bob sells all 175 HEX-3000 to Alice through PulseX. Alice has 775 HEX-3000. Bob has 0 HEX-3000.</li>
+<li>Bob sells all 175 HEX-3000 to Alice through PulseX at the prevailing market discount to HEX. Alice has 775 HEX-3000. Bob has 0 HEX-3000.</li>
 </ul>
 </li>
 <li>End Stake<!-- -->
 <ul>
 <li>Bob goes to end stake, but only receives the rewards earned on his stake between days 100 and the end because he minted HEX-3000 against all accrued rewards between days 1 and 99. Bob also doesn&#x27;t receive his principal because he minted HEX-3000 against that as well.</li>
-<li>Alice goes to end stake and receives her accrued rewards over the course of the entire stake because Alice didn&#x27;t mint any HEX-3000 against her rewards. But she doesn&#x27;t receive her principal since she minted HEX-3000 against her principal. However, Alice still has 775 HEX-3000 which she can exchange 1 for 1 for HEX since the corresponding amount of HEX was withheld from Bob and Alice at end stake.</li>
+<li>Alice goes to end stake and receives her accrued rewards over the course of the entire stake because Alice didn&#x27;t mint any HEX-3000 against her rewards. But she doesn&#x27;t receive her principal since she minted HEX-3000 against her principal. However, Alice still has 775 HEX-3000 which she can exchange 1 for 1 for HEX since the corresponding amount of HEX was withheld from Bob and Alice at end stake. Upon redeeming, Alice earns a profit in HEX based on here discounted purchase price of HTT-3000.</li>
 </ul>
 </li>
 </ul>
@@ -55,7 +55,7 @@
 <ul>
 <li>Day 1850 arrives and Bob wants to regain control of a portion of the collateralized HEX in his stake.</li>
 <li>Bob buys 50 HTT-2000 from the trading pool and returns the 50 HTT-2000 to Actuator which is then burned.</li>
-<li>Bob now only has 100 HTT-2000 outstanding against his stake.</li>
+<li>Bob now only has 100 HTT-2000 outstanding against his stake and thus the collateralized portion of the stake is lowered to 100 HEX.</li>
 </ul>
 </li>
 <li>End Stake<!-- -->
@@ -126,10 +126,8 @@
 <li>1/10th of Bob&#x27;s &#x27;escrowed&#x27; rewards (all rewards earned in the final 10% of the stake&#x27;s life are &#x27;escrowed&#x27;) will now be paid out to whoever ends the stake. However, the gas costs still exceed the end stake rewards so no one chooses to unlock the stake</li>
 <li>Day 3007 arrives</li>
 <li>5/10ths of Bob&#x27;s escrowed rewards will now be paid out to the end staker and that amount happens to exceed the gas costs.</li>
-<li>Charlie who owns no HTTs or stakes chooses to end Bob&#x27;s stake to earn the end stake reward. The remaining HEX proceeds go to Bob except for collateralized 150 HEX held in reserve.</li>
-<li>Alice then redeems here 150 HTT-3000 for 150 HEX without having to ever end stake.</li>
-<li>Alice invokes end stake on Bob&#x27;s stake and receives the full HEX proceeds from his stake except for the 100 HEX that was collateralized.</li>
-<li>The 100 collateralized HEX is held in reserve in the protocol until redemption on day 3000</li>
+<li>Charlie who owns no HTTs or stakes chooses to end Bob&#x27;s stake to earn the end stake reward. The remaining HEX proceeds go to Bob except for collateralized 150 HEX held in reserve for the HTT holders.</li>
+<li>Alice then redeems her 150 HTT-3000 for 150 HEX without having to ever end stake. This is possible because end stake was already invoked by Charlie.</li>
 </ul>
 </li>
 </ul>
