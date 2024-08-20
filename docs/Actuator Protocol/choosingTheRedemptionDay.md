@@ -1,0 +1,37 @@
+---
+sidebar_position: 4
+---
+
+# Choosing the Redemption Day
+
+### Introduction
+There are several implications to consider when choosing the redemption day for extracting 'HEX Time Tokens' (HTT) from your stake. At a high level, there are 3 approaches: 
+- Redemption Day = End Stake Day
+- Redemption Day > End Stake Day
+- Redemption Day < End Stake Day
+
+### Redemption Day = End Stake Day
+The simplest and recommended approach in most cases is for users to set the redemption day of the extracted HTTs to the same day as the end day of their stake. Under this approach, the extractable amount of HTTs for a given stake will always equal the staked HEX + HEX payouts to date. As each day progresses, the HEX payouts increase and thus the extractable amount of HTTs increase. Once end day arrives, the original staker can end stake and collect their HEX proceeds minus any outstanding HTTs, otherwise, the community will be incentivized to end stake and achieve the same effect (in which case, some or all 'Escrowed Rewards' go to the user who ends the stake. See 'Redemption' for more info).
+
+### Redemption Day > End Stake Day
+While setting the redemption day to the end day is convenient, many times there will not be a liquid trading pool for that particular HEX Time Token. In which case, stakers can choose to set the redemption day beyond end day in order to mint a HEX Time Token that is liquid and tradable.
+This choice impacts the extractable stake value as the protocol now needs to account for the possibility the original staker fails to end stake by redemption day. Thus, the amount of extractable HTTs is lowered by the theoretical late end stake penalty (See 'Extractable Stake Value' for more info). The larger the difference between redemption day and end day, the greater the theoretical penalty, and thus the lower the extractable HTT amount. 
+
+Under this approach, the original staker doesn't incur any additional responsibility that isn't already imposed by the HEX protocol. Stakers who choose this strategy, need to simply remember to end stake on time as always and collect the HEX proceeds minus the quantity of outstanding HTTs. In the event the staker fails to end stake, the community will eventually be eligible and incentivized to end stake once redemption day arrives. At which point, the original the HEX proceeds will be transferred to the original staker minus the late penalty and outstanding HTTs.  
+
+### Redemption Day > End Stake Day
+Users can also choose an advanced yet powerful strategy where the redemption day is set before the end stake day. Under this approach, the HTTs are no longer backed by the intrinsic value of the stake, but instead are backed by the EES value (See 'Extractable Stake Value' for more info). However, given they are backed by the EES value, users are therefore subject to EES by the community in the event they don't return all extracted HTTs by the redemption day. 
+
+Unlike the first 2 approaches, this strategy is effectively a loan that can be liquidated if not repaid on time. In the event the original staker fails to return all outstanding HTTs by redemption day, the community will be eligible to EES the stake on redemption day. At which point, any HEX proceeds will be transferred to the original staker minus the early end stake penalty and outstanding HTTs.  
+
+### Other Considerations When Choosing Redemption Day
+- HTT Discounts
+  - Earlier redemption days result in smaller HTT discounts to HEX and thus a higher HTT dollar value.
+- HTT pricing anomaly
+  - One HTT may be 'overpriced' relative to another, thus impacting the redemption day selection.
+- HTT Liquidity
+  - Certain HTTs will inevitably be more liquid than others, which impacts the decision depending on the size of your HTT position.
+- Extractable Stake Value
+  - Different redemption days selections will result in different quantities of extractable HTTs. 
+- Investment Time Horizon
+  - Short time horizons may justify opting for earlier redemption days. 

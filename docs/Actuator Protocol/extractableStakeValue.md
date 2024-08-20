@@ -18,13 +18,14 @@ When calculating the Extractable Stake Value where the target day is before end 
 
 Furthermore, If the target day is before mid-stake, we are forced to assume the Extractable Stake Value is zero. The reason being is that (while unlikely) the HEX protocol may potentially penalize 100% of the principal and rewards when end staking before mid-stake. 
 
-Again, the above explanation is simply describing what's always been true about the HEX protocol. Actuator leverages these properties of HEX to determine how many HTTs can be minted for a given redemption day. 
+### Actuator and Extractable Stake Value
+The above explanation simply describes what's always been true about the HEX protocol. Actuator leverages these properties of HEX to determine how many HTTs can be minted for a given redemption day. 
+
+When extracting HTTs from a stake, it should be noted that assigning the redemption day before end stake imposes extra responsibility on the staker. Stakers who choose this strategy subject themselves to EES by any user in the event they fail to return their minted HTTs by redemption day. This is because HTT that have reached redemption day need to access the underlying HEX that backs them and thus the collateralized stakes need to be ended. However, stakers in this position can simply buy back and return their borrowed HTTs before redemption to regain full control of their stake and avoid EES by the community. 
+
+While this can be a very powerful strategy in leveraging the full value of your stake, it should only be done by advanced users who fully understand its implications. We therefore recommend users set their redemption day on or after end stake to eliminate the risk of EES entirely. 
 
 ### Formula
 The above explanation leaves out a small component of the formula which is the 'Escrowed Rewards' (See 'Redemption' for more info). We incorporate this component below to arrive at the rigorous and final formula: 
-
-<!-- $$
-\text{Extractable Stake Value} = \text{Staked HEX} + \text{HEX Payouts to Date} - \left[\text{Late End Stake Penalty (if any)} \text{ OR } \text{Early End Stake Penalty (if any)}\right] - \text{End Stake Subsidy (if any)}
-$$ -->
 
 **Extractable Stake Value** = Staked HEX + HEX Payouts to Date - [Late End Stake Penalty (if any) OR Early End Stake Penalty (if any)] - End Stake Subsidy (if any)

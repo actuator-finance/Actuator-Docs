@@ -11,7 +11,7 @@ Anyone can mint HEX Time Tokens if they have created/delegated a HEX Stake Insta
 ### How is the redemption day for a HEX Time Token (HTT) determined?
 The redemption day is set by the minter and must be on or after the underling stake end day.
 ### Are HEX Time Tokens fungible (HTT)?
-HEX Time Tokens that have a common redemption day are fungible, even if they are backed by distinct stakes.
+HEX Time Tokens that have a common redemption day are fungible, even if they are backed by distinct stakes. This is a key innovation of the protocol that enables broader liquidity and market efficiency of stakes as collateral.
 ### Can I still early end stake?
 Yes, Actuator wrapped HSI supports all the same operations as an HSI assuming there are no HTTs minted against the stake.
 ### Why would I want to sell my minted HEX Time Tokens (HTT)?
@@ -19,9 +19,9 @@ To unlock the stake value and monetize your stake at a fair price while retainin
 ### Why would I want to buy HEX Time Tokens (HTT)?
 1. Achieve similar investment growth to HEX stakes while remaining in liquid tokens
 2. Take advantage of mispricing. For example, a discounted HTT may result in a greater expected return than an equivalent HEX stake.
-3. Lock in a fixed rate of return in HEX terms because 1 HTT is redeemable for 1 HEX token at redemption day. This is distinct from typical HEX staking where future end stake payout is indeterminate.
+3. Lock in a fixed rate of return in HEX terms because 1 HTT is redeemable for 1 HEX token at redemption day. This is distinct from typical HEX staking where future end stake payout is indeterminate and is dependent upon the actions of other stakers.
 ### Why am I not allowed to mint tokens against rewards earned in the final 10% of the stake's life?
-Up to 10% of the rewards for a given stake are reserved in the event the staker fails to end stake on time. In which case, the rewards instead go to the user who chooses to end the stake. Since HTT holders depend on 'stakeEnd' being invoked in a timely fashion, it's important there is minimal friction to ending a stake in the event the original staker fails to do so. 10% is chosen as it will very likely offset any gas costs associated with end staking. 
+Up to 10% of the rewards for a given stake are reserved in the event the staker fails to end stake on time. In which case, the rewards instead go to the user who chooses to end the stake. Since HTT holders depend on 'stakeEnd' being invoked in a timely fashion, it's important there is minimal friction to ending a stake in the event the original staker fails to do so. 10% is chosen as it will very likely offset any gas costs associated with end staking and provides a strong incentive for the community or any HTT holder to endstake if the stake owner does not.
 ### Is there a late redemption penalty?
 Similar to HEX stakes, there is a 14-day period where there is no penalty and tokens can be redeemed 1:1 for HEX. However, after 14 days you may be subject to penalties. Given HEX Time Tokens (HTT) are backed by HEX stakes, any stakes that are not unlocked after 14 days begin incurring penalties (enforced by the HEX protocol) and thus the HTTs may experience depreciation as well. The exact amount of penalties will depend on how many underlying stakes are in penalty. 
 ### If I only mint and sell a portion of my stake, can I still collect any remaining principal/rewards at end stake?
@@ -32,7 +32,7 @@ Since 1 HTT is redeemable for 1 HEX token at the designated redemption day, we c
 ### Why would one set the redemption day of minted HEX Time Tokens to a day greater than the underlying stake's end day?
 If there is no liquid trading pool for that given token's redemption day, users can choose a later day that matches a redemption day with a more liquid pool.
 ### When minting tokens whose redemption day is after the underlying stake's end day, why is the extractable HTT amount less than my total principal + accrued rewards?
-The further away redemption day is from the stake end day, the extractable amount decreases to account for the potential late end stake penalty enforced by the HEX protocol. The reason is because the HEX protocol begin penalizes stakes that fail to end stake starting 2 weeks after end day. While Actuator stakers can easily avoid this by timely ending their stake (like any other HEX stake or HSI), the Actuator system must assume worst case scenario that the original stake creator will fail to end stake and thus result in maximum penalties leading up to the redemption day of the minted tokens. This ensures all minted HTTs will be redeemable 1:1 for HEX on their designated redemption day.  
+The further away redemption day is from the stake end day, the extractable amount decreases to account for the potential late end stake penalty enforced by the HEX protocol. The reason is because the HEX protocol begins penalizing stakes that fail to end stake starting 2 weeks after end day. While Actuator stakers can easily avoid this by timely ending their stake (like any other HEX stake or HSI), the Actuator system must assume worst case scenario that the original stake creator will fail to end stake and thus result in maximum penalties leading up to the redemption day of the minted tokens. This ensures all minted HTTs will be redeemable 1:1 for HEX on their designated redemption day.  
 ### How is Actuator related to Hedron?
 In the same way a HSI is a wrapper around a HEX stake with added functionality, a Actuator stake is a wrapper around a HSI with added functionality.
 ### If I extract HEX Time Tokens (HTT) from my stake and sell them, do I still own my stake? 
@@ -45,11 +45,11 @@ Every HEX stake can be thought of as a claim on HEX tokens (stake principal + ac
 Yes, as long as you have accrued rewards on the stake that haven't already been extracted against.
 ### Can I return/retire HEX Time Tokens minted against my stake whenever I want?
 Yes, and this allows you to regain full control and ownership of the stake.
-### If I already have an existing HSI can I still wrap it Actuator to mint HEX Time Tokens.
+### If I already have an existing HSI can I still wrap it through Actuator to mint HEX Time Tokens.
 Yes, since Actuator is a wrapper around Hedron, you can wrap your existing HSI through Actuator and utilize all Actuator functionality. Additionally, you can unwrap a Actuator stake back to an HSI.
 ### Who pays for the gas to end stakes that are backing HEX Time Tokens?
 Once end day arrives, anyone can end a stake including the staker. However, after 3 days without stakeEnd being called, each additional day that passes results in an additional 1% of the stake rewards (up to 10%) going towards the user who calls stakeEnd (instead of the original staker). This ensures that even if gas is high, end stakers will likely be fully reimbursed for gas costs (in HEX) if they wait.
-### How is this different than Maximus?
+### How is this different than pooled HEX stake protocols?
 - Maxi tokens represent ownership over an indeterminate amount of HEX at a future date. HEX Time Tokens represent ownership over a determinate amount of HEX at a future date. i.e. 100 HTT-2500 is backed by exactly 100 HEX unlockable on day 2500. 
 - Maxi tokens are priced inaccurately due to artificial supply constraints. While volatility is a benefit for many, if you're looking to buy/sell maxi tokens at a fair and predictable price, the volatility and price inefficiency is undesirable. Whereas Actuator avoids supply constraints by allowing for fluid creation of HEX Time Tokens ensuring the price is in line with HEX. 
 - Existing HSI owners cannot mint maxi tokens against their HSI. 
@@ -154,7 +154,7 @@ the price of the HTT in the pools
 -->
 ### Why was the last 10% of stake rewards chosen as the reserve portion for the community end stake incentive?
 Rewards accrued at the end of the stake life are less likely to benefit from monetization than rewards accrued early on. 
-### If no one is staking ACTR at a particular redemption day, is there still an HTT creation fee?
+### If no ACTR vault exists at a particular redemption day, is there still an HTT creation fee?
 No, the HTT creation fee is waived if there are no ACTR stakers for that redemption day. 
 ### Can I still mint my stake's Hedron?
 Yes, even if you've extracted HTTs against your stake, you can always mint any earned Hedron from your stake. 
