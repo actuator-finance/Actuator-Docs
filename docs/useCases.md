@@ -11,7 +11,7 @@ sidebar_position: 5
   - Achieve leveraged HEX Stake returns through **Amplified Stakes** 
   - Avoiding EES 
 - HEX Time Tokens (HTT)
-  - Lock in a **fixed rate** of return on HEX through purchase of HTTs
+  - Lock in a **fixed rate** of return, in HEX terms, through purchase of HTTs
   - gain exposure to **leveraged HEX without liquidation** 
   - Indirectly **participate in the upside of HEX staking** stake while retaining liquidity
   - **Hedge** undesirable changes in the HEX yield curve (e.g. hedge duration risk)
