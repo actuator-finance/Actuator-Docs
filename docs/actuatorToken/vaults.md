@@ -8,8 +8,8 @@ ACTR vaults provide ACTR token holders with a flexible and beneficial way to ear
 
 ### Choosing the HEX Day.
 
-- **HTT Choice**: When you deposit your ACTR tokens, you must designate which HTT rewards you will participate in. e.g. if you deposit in the in the vault that rewards HTT-3000, you will earn a portion of all fees generated from the creation of HTT-3000.
-- **Flexibility**: Depositors can allocate 100% of their ACTR tokens to one vault or spread them across multiple vault and earn a variety of HTTs. This allows you to focus on the HTTs where you expect higher fees and and thus returns.
+- **HTT Choice**: When you deposit your ACTR tokens, you must designate which HTT rewards you will participate in. For example, if you deposit in the vault that rewards HTT-3000, you will earn a portion of all fees generated from the creation of HTT-3000.
+- **Flexibility**: Depositors can allocate 100% of their ACTR tokens to one vault or spread them across multiple vaults and earn a variety of HTTs. This allows you to focus on the HTTs where you expect higher fees and and thus returns.
 
 ## Fees and Rewards
 
