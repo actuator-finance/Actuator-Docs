@@ -22,9 +22,9 @@ These tokens are intended to incentivize participation in the liquidity pools.
 
 ### Team Allocation
 
-25% (250,000,0000 ACTR) of the total token supply is reserved for the team to ensure long-term commitment and ongoing development support. This amount is initially minted to the team address at contract launch, however, the team will immediately deposit 100% of tokens to to a "Time Lock" contract where the tokens are locked. From there, the ACTR tokens are gradually unlocked over the course of three years and follows same unlock schedule to as the farms. This ensures the team control of ACTR tokens never exceeds 25% of the circulating supply at any point in time. This distribution is scheduled as follows:
+25% (250,000,0000 ACTR) of the total token supply is initially minted to the team address at contract launch. 1% of the 25% will immediately be sent to the Forge for reviewers and NFT holders. 100% of the remaining ACTR tokens will be transferred to an immutable "Time Lock" contract where the tokens are locked. From there, the ACTR tokens are gradually unlocked over the course of three years and follow the same unlock schedule as the farms. This ensures the team control of ACTR tokens never exceeds 24% of the circulating supply at any point in time. This distribution is scheduled as follows:
 
-- **Year 1**: 116,000,000 tokens
-- **Year 2**: 83,000,000 tokens
-- **Year 3**: 51,000,000 tokens
+- **Year 1**: 111,360,000 tokens
+- **Year 2**: 79,680,000 tokens
+- **Year 3**: 48,960,000 tokens
 
