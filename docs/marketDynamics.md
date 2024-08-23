@@ -20,11 +20,20 @@ If the price of a HTT becomes excessively cheap and results in an implied return
 ### Yield Curve
 As HTTs achieve price discovery, a HEX yield curve will emerge showing the various rates of return across different redemption days based on the discount of HTTs relative to HEX. The curve can then be used to make more informed decisions for market participants.
 
+![Alt text](/img/Discounts.png)
+<small>Chart discounts are hypothetical</small>
+
 ### Risk-Free Rate
 While every token includes platform and smart contract risk, HTTs are unique in that they are free of market, price, and liquidation risks. 1 HTT is guaranteed to return 1 HEX. Therefore, the current discount of a given HTT to HEX is effectively the native Risk-Free Rate in HEX for that time-horizon. Upon purchasing the HTT, the buyer locks in a guaranteed rate of return in HEX driven by the discount. 
 
 ### Implied Future Payout Per T-Share
 Assuming HTT discounts approximate the expected total return on equivalent HEX stakes, we can easily derive an implied future path of the daily payout per T-Share. Suppose there exists a 90% discount on HTT-5000 relative to HEX. In which case the market is signaling new HEX stakes ending on day 5000 are expected to yield 1000%. From there we can derive a projected daily payout per T-Share based on those stake parameters. We can then apply this across the various HTT redemption days and visualize the projected evolution of the daily payout per T-Share.
+
+<video width="650" controls>
+  <source src="/img/ImpliedPayoutsVideo.mp4" type="video/mp4" />
+</video>
+
+The above video demonstrates how we can "back into" the future path of payout per t-share by adjusting the payouts until the various HEX staking yields equal the existing HEX Time Token yields. Note the payout per t-share corresponds to the right axis and the HEX staking yields and the HEX Time Token yields correspond to the left axis. The values in the video are hypothetical and for demonstration purposes only. 
 
 ### Relevant HEX Time Token (HTT) Redemption Days
 While anyone can create an HTT for any redemption day, it's likely only a handful of HTTs will have liquid pools. As the protocol matures, we expect liquidity to increase across more and more pools. we make some assumptions about the most relevant redemption days to bootstrap project liquidity (see 'Liquidity Mining' page for more info). With that being said, the market will ultimately decide which HTTs are most attractive and liquid based and where users choose prefer to stake (HTT sellers) and as well as the maturity preference of HTT buyers. Here's just a few possible scenarios: 

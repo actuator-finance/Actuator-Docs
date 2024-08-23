@@ -27,3 +27,7 @@ ACTR vaults provide ACTR token holders with a flexible and beneficial way to ear
 - **Recapturing Fees**: By deposit into the vault that earns the same HTT you're about to mint against your HEX stake, you can recapture some or all of the HTT fees pay. 
 - **Enhanced Flexibility**: Allocate your tokens in a way that best suits your confidence and expected reward outcomes from different HTTs.
 
+## How to Acquire ACTR
+In order to acquire ACTR for vaulting, users can follow the flowchart steps below (Alternatively, they can buy ACTR on the open market). 
+![Alt text](/img/ActuatorEarnFlowchart.png)
+
