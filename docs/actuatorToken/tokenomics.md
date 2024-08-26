@@ -8,6 +8,9 @@ sidebar_position: 1
 
 The total supply of Actuator is capped at **1 billion tokens**, which will be fully distributed over the course of three years from the launch date.
 
+#### ACTR Distribution Schedule
+![Alt text](/img/ACTREmissions.png)
+
 ## Allocation Details
 
 ### Liquidity Farms
