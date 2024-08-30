@@ -6,13 +6,13 @@ sidebar_position: 9
 
 ## Security Audits
 #### SourceHat (Completed)
-SourceHat audited the full set of Actuator contracts. The report can be found here: https://sourcehat.com/audits/ActuatorFinance/
+SourceHat completed an audit of the Actuator contracts on August 27th. The report can be found here: https://sourcehat.com/audits/ActuatorFinance/
 
 #### Dedaub (In progress)
-Dedaub is performing an audit on the core Actuator contract: HEXTimeTokenManager.sol. 
+Dedaub is currently performing a security audit on the Actuator contracts. 
 
 ## Financial Audits
 #### Dedaub (In progress)
-Dedaub is performing a narrow financial audit which seeks to verify the following financial invariants: 
+Dedaub is currently performing a financial audit which seeks to verify these key financial invariants: 
 - 1 'HEX Time Token' (HTT) is always redeemable for 1 HEX at the designated redemption day. 
 - After minting HTTs against a stake, the quantity of HEX the staker forgoes at end stake is exactly equivalent to the quantity of HTTs created.
