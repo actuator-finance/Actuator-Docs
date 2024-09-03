@@ -28,7 +28,7 @@ Under this approach, the original staker doesn't incur any additional responsibi
 Note the "Current Extractable Value" is roughly half the "Intrinsic Value" due to redemption day falling half way into late penalty (i.e. 1 year after end stake).</small>
 ![Alt text](/img/RedemptionGreaterThanEnd.png)
 
-### Redemption Day > End Stake Day
+### Redemption Day < End Stake Day
 Users can also choose an advanced yet powerful strategy where the redemption day is set before the end stake day. Under this approach, the HTTs are no longer backed by the intrinsic value of the stake, but instead are backed by the EES value (See 'Extractable Stake Value' for more info). However, given they are backed by the EES value, users are therefore subject to EES by the community in the event they don't return all extracted HTTs by the redemption day. 
 
 Unlike the first 2 approaches, this strategy is effectively a loan that can be liquidated if not repaid on time. In the event the original staker fails to return all outstanding HTTs by redemption day, the community will be eligible to EES the stake on redemption day. At which point, any HEX proceeds will be transferred to the original staker minus the early end stake penalty and outstanding HTTs.  
