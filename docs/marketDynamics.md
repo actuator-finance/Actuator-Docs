@@ -8,7 +8,7 @@ sidebar_position: 4
 Given 1 HTT is redeemable for 1 HEX in the future, we would expect a tight correlation in price between the 2 assets. However, the longer the time to redemption, the greater the discount a HTT would have relative to HEX due to the time value of the asset (i.e. 1 HEX today is more than 1 HEX a year from now). Upon purchasing a HTT with a discount to HEX, the buyer effectively locks in a fixed rate of return in HEX terms given that 1 HTT is redeemable for exactly 1 HEX at the designated redemption day. 
 
 ### HTT Discount to HEX
-The size of the discount would likely be driven by the expected return on an equivalent HEX stake. For example, if 1 HEX staked today for 5 years is projected to return 100%, we might expect a HEX Time Token that is redeemable in 5 years to trade at a 50% discount resulting in an equivalent ROI of 100%. However, the HTT has the added benefit of being liquid and offers a fixed rate of return compared to HEX stakes thus putting upward pressure on the price of HTTs and thus lowering implied ROI. Additionally, we would expect many other factors driving the HEX discount, but this would likely be the primary driver. 
+The size of the discount would likely be driven by the expected return on an equivalent HEX stake. For example, if 1 HEX staked today for 5 years is projected to return 100%, we might expect a HEX Time Token that is redeemable in 5 years to trade at a 50% discount resulting in an equivalent ROI of 100% (Note these discounts/returns are purely hypothetical for the sake of the explanation). However, the HTT has the added benefit of being liquid and offers a fixed rate of return compared to HEX stakes thus putting upward pressure on the price of HTTs and thus lowering implied ROI. Additionally, we would expect many other factors driving the HEX discount, but this would likely be the primary driver. 
 
 ### Price Restoration
 #### Overpriced HEX Time Token (HTT)
@@ -24,10 +24,10 @@ As HTTs achieve price discovery, a HEX yield curve will emerge showing the vario
 <small>Chart discounts are hypothetical</small>
 
 ### Risk-Free Rate
-While every token includes platform and smart contract risk, HTTs are unique in that they are free of market, price, and liquidation risks. 1 HTT is guaranteed to return 1 HEX. Therefore, the current discount of a given HTT to HEX is effectively the native Risk-Free Rate in HEX for that time-horizon. Upon purchasing the HTT, the buyer locks in a guaranteed rate of return in HEX driven by the discount. 
+While every token includes platform and smart contract risk, HTTs are unique in that they are free of counterparty and credit risks. 1 HTT is guaranteed to return 1 HEX. Therefore, the current discount of a given HTT to HEX is effectively the native Risk-Free Rate in HEX for that time-horizon. Upon purchasing the HTT, the buyer locks in a guaranteed rate of return in HEX driven by the discount. 
 
 ### Implied Future Payout Per T-Share
-Assuming HTT discounts approximate the expected total return on equivalent HEX stakes, we can easily derive an implied future path of the daily payout per T-Share. Suppose there exists a 90% discount on HTT-5000 relative to HEX. In which case the market is signaling new HEX stakes ending on day 5000 are expected to yield 1000%. From there we can derive a projected daily payout per T-Share based on those stake parameters. We can then apply this across the various HTT redemption days and visualize the projected evolution of the daily payout per T-Share.
+Assuming HTT discounts approximate the expected total return on equivalent HEX stakes, we can easily derive an implied future path of the daily payout per T-Share. Suppose there exists a 50% discount on HTT-5000 relative to HEX (Note these discounts are purely hypothetical for the sake the explanation). In which case the market is signaling new HEX stakes ending on day 5000 are expected to yield 100%. From there we can derive a projected daily payout per T-Share based on those stake parameters. We can then apply this across the various HTT redemption days and visualize the projected evolution of the daily payout per T-Share. 
 
 <video width="650" controls>
   <source src="/img/ImpliedPayoutsVideo.mp4" type="video/mp4" />

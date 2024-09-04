@@ -3,6 +3,7 @@ sidebar_position: 8
 ---
 
 #   ELI5
+
 ## HEX
 HEX is a blockchain protocol where users deposit HEX Tokens into the protocol which creates a 'HEX Stake'. Users who create HEX Stakes are rewarded in HEX tokens every day. The longer your stake is 'locked', the more HEX tokens you earn. Once your HEX Stake is 'unlocked', you receive the original HEX deposited plus the daily HEX rewards earned during the lockup period.
 
@@ -16,4 +17,6 @@ Once calculated, stakers can then create an equivalent amount of 'HEX Time Token
 This gives powerful new options for both stakers and casual HEX buyers. 
 - Stakers can now create HTTs and essentially sell a portion of their stake at a reasonable price. 
 - Casual HEX investors can now buy HTTs at a discount to HEX and redeem their HTTs for HEX in the future.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3AAYDZUvmdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
