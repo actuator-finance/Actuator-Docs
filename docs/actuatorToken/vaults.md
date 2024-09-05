@@ -23,8 +23,8 @@ ACTR vaults provide ACTR token holders with a flexible and beneficial way to ear
 
 ## Benefits of ACTR Vaults
 
-- **Direct Rewards**: Earn HTT from HTT creation fees. 
-- **Recapturing Fees**: By deposit into the vault that earns the same HTT you're about to mint against your HEX stake, you can recapture some or all of the HTT fees pay. 
+- **Direct Rewards**: Earn HTTs from HTT creation fees. 
+- **Recapturing Fees**: By depositing into the vault that earns the same HTT you're about to mint against your HEX stake, you can recapture some or all of the HTT fees pay. 
 - **Enhanced Flexibility**: Allocate your tokens in a way that best suits your confidence and expected reward outcomes from different HTTs.
 
 ## How to Acquire ACTR
