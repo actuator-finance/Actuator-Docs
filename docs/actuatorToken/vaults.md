@@ -19,7 +19,7 @@ ACTR vaults provide ACTR token holders with a flexible and beneficial way to ear
 ## Deposit and Withdraw
 
 - **Lock-Up Period**: There is a 90-day lock-up period to ensure vaults are resistant to manipulations. Any increase in user deposits will reset the user's 90-day lock-up period. 
-- **Early Unlock Penalty**: Depositors who decide to withdraw early incur a penalty starting at 100% and decreasing linearly to 0% at the end of the lock-up period. ACTR is therefore deflationary beginning after the initial 3 year distribution period.
+- **Early Unlock Penalty**: Depositors who decide to withdraw early incur a penalty starting at 100% and decreasing linearly to 0% at the end of the lock-up period. Any penalized ACTR is then immediately burned. ACTR will therefore deflationary beginning after the initial 3 year distribution period.
 
 ## Benefits of ACTR Vaults
 
