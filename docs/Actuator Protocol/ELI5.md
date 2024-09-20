@@ -8,7 +8,7 @@ sidebar_position: 8
 HEX is a blockchain protocol where users deposit HEX Tokens into the protocol which creates a 'HEX Stake'. Users who create HEX Stakes are rewarded in HEX tokens every day. The longer your stake is 'locked', the more HEX tokens you earn. Once your HEX Stake is 'unlocked', you receive the original HEX deposited plus the daily HEX rewards earned during the lockup period.
 
 ## Actuator
-Actuator is a blockchain protocol that calculates the amount of HEX tokens your HEX stake is worth. This formula is simple: 
+Actuator is firstly a blockchain protocol that calculates the amount of HEX tokens your HEX stake is worth. This formula is simple: 
 
 ```HEX Stake Value = HEX Deposit + Earned HEX Rewards```
 
