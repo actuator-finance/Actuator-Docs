@@ -26,6 +26,6 @@ When extracting HTTs from a stake, it should be noted that assigning the redempt
 While this can be a very powerful strategy in leveraging the full value of your stake, it should only be done by advanced users who fully understand its implications. We therefore recommend users set their redemption day on or after end stake to eliminate the risk of EES entirely. 
 
 ### Formula
-The above explanation leaves out a small component of the formula which is the 'Escrowed Rewards' (See 'Redemption' for more info). We incorporate this component below to arrive at the rigorous and final formula: 
+The above explanation leaves out a small component of the formula which is the 'Escrowed Rewards' (See [Redemption Process](/Actuator%20Protocol/redemption) for more info). We incorporate this component below to arrive at the rigorous and final formula: 
 
 **Extractable Stake Value** = Staked HEX + HEX Payouts to Date - [Late End Stake Penalty (if any) OR Early End Stake Penalty (if any)] - End Stake Subsidy (if any)
