@@ -18,6 +18,14 @@ When calculating the Extractable Stake Value where the target day is before end 
 
 Furthermore, If the target day is before mid-stake, we are forced to assume the Extractable Stake Value is zero. The reason being is that (while unlikely) the HEX protocol may potentially penalize 100% of the principal and rewards when end staking before mid-stake. 
 
+**TLDR**: There are 3 possible calculations for Extractable Stake Value depending on the target day: 
+1. Target Day is on End Stake
+    - Extractable Stake Value = Intrinsic Value of the Stake
+2. Target Day is After End Stake
+    - Extractable Stake Value = Intrinsic Value - Late End Stake penalty as of Target Day
+3. Target Day is Before End Stake
+    - Extractable Stake Value = Minimal EES Value of the Stake as of Target Day
+
 ### Actuator and Extractable Stake Value
 The above explanation simply describes what's always been true about the HEX protocol. Actuator leverages these properties of HEX to determine how many HTTs can be minted for a given redemption day. 
 
