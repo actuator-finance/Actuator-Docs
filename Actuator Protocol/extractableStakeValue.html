@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">Extractable Stake Value | Actuator Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://docs.actuator.finance/Actuator Protocol/extractableStakeValue"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Extractable Stake Value | Actuator Docs"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.actuator.finance/Actuator Protocol/extractableStakeValue"><link data-rh="true" rel="alternate" href="https://docs.actuator.finance/Actuator Protocol/extractableStakeValue" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.actuator.finance/Actuator Protocol/extractableStakeValue" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.6153e507.css">
-<script src="/assets/js/runtime~main.437f632e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.976fd1e5.js" defer="defer"></script>
 <script src="/assets/js/main.7a0b781a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,6 +18,24 @@ The Extractable Stake Value is not a novel concept created by Actuator but inste
 <p>The Extractable Stake Value at end stake is always the originally staked HEX + accrued HEX rewards to date. In other words, assuming a timely end stake, we are guaranteed to eventually receive our staked HEX + HEX interest to date. However, the Extractable Stake Value varies as we adjust the target day. For example, the Extractable Stake Value 1 year after the scheduled end stake day is staked HEX + HEX interest to date - the Late End Stake Penalty. And 2 years after the scheduled end stake, the Extractable Stake Value is 0 HEX, as the HEX protocol wipes away 100% of the stake value 52 weeks after end stake.</p>
 <p>When calculating the Extractable Stake Value where the target day is before end stake but after mid-stake, we need to apply the EES formula from the HEX protocol. In which case, the Extractable Stake Value is staked HEX + HEX payouts post mid-stake. Only payouts after mid-stake are included and all payouts earned in the first half are assumed to be wiped away by the Early End Stake penalty.</p>
 <p>Furthermore, If the target day is before mid-stake, we are forced to assume the Extractable Stake Value is zero. The reason being is that (while unlikely) the HEX protocol may potentially penalize 100% of the principal and rewards when end staking before mid-stake.</p>
+<p><strong>TLDR</strong>: There are 3 possible calculations for Extractable Stake Value depending on the target day:</p>
+<ol>
+<li>Target Day is on End Stake<!-- -->
+<ul>
+<li>Extractable Stake Value = Intrinsic Value of the Stake</li>
+</ul>
+</li>
+<li>Target Day is After End Stake<!-- -->
+<ul>
+<li>Extractable Stake Value = Intrinsic Value - Late End Stake penalty as of Target Day</li>
+</ul>
+</li>
+<li>Target Day is Before End Stake<!-- -->
+<ul>
+<li>Extractable Stake Value = Minimal EES Value of the Stake as of Target Day</li>
+</ul>
+</li>
+</ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="actuator-and-extractable-stake-value">Actuator and Extractable Stake Value<a href="#actuator-and-extractable-stake-value" class="hash-link" aria-label="Direct link to Actuator and Extractable Stake Value" title="Direct link to Actuator and Extractable Stake Value">​</a></h3>
 <p>The above explanation simply describes what&#x27;s always been true about the HEX protocol. Actuator leverages these properties of HEX to determine how many HTTs can be minted for a given redemption day.</p>
 <p>When extracting HTTs from a stake, it should be noted that assigning the redemption day before end stake day imposes extra responsibility on the staker. Stakers who choose this strategy subject themselves to EES by any user in the event they fail to return their minted HTTs by redemption day. This is because HTTs that have reached redemption day need to access the underlying HEX that backs them and thus the collateralized stakes need to be ended. However, stakers in this position can simply buy back and return their borrowed HTTs before redemption to regain full control of their stake and avoid EES by the community.</p>
