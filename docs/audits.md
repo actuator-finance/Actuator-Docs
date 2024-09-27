@@ -5,11 +5,11 @@ sidebar_position: 9
 # Audits
 
 ## Security Audits
-#### SourceHat 
-SourceHat completed an audit of the Actuator contracts on August 27th. The report can be found here: https://sourcehat.com/audits/ActuatorFinance/
-
 #### Dedaub 
 Dedaub completed an audit of the Actuator contracts on September 6th. The report can be found here: https://dedaub.com/audits/actuator/actuator-finance-sep-06-2024
+
+#### SourceHat 
+SourceHat completed an audit of the Actuator contracts on August 27th. The report can be found here: https://sourcehat.com/audits/ActuatorFinance/
 
 ## Financial Audits
 #### Dedaub 
