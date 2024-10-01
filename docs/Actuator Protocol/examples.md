@@ -15,7 +15,7 @@ sidebar_position: 6
   - Bob sells all 175 HEX-3000 to Alice through PulseX at the prevailing market discount to HEX. Alice has 775 HEX-3000. Bob has 0 HEX-3000. 
 - End Stake
   - Bob goes to end stake, but only receives the rewards earned on his stake between days 100 and the end because he minted HEX-3000 against all accrued rewards between days 1 and 99. Bob also doesn't receive his principal because he minted HEX-3000 against that as well.
-  - Alice goes to end stake and receives her accrued rewards over the course of the entire stake because Alice didn't mint any HEX-3000 against her rewards. But she doesn't receive her principal since she minted HEX-3000 against her principal. However, Alice still has 775 HEX-3000 which she can exchange 1 for 1 for HEX since the corresponding amount of HEX was withheld from Bob and Alice at end stake. Upon redeeming, Alice earns a profit in HEX based on here discounted purchase price of HTT-3000. 
+  - Alice goes to end stake and receives her accrued rewards over the course of the entire stake because Alice didn't mint any HEX-3000 against her rewards. But she doesn't receive her principal since she minted HEX-3000 against her principal. However, Alice still has 775 HEX-3000 which she can exchange 1 for 1 for HEX since the corresponding amount of HEX was withheld from Bob and Alice at end stake. Upon redeeming, Alice earns a profit in HEX based on her discounted purchase price of HTT-3000. 
 
 ### Example 2 - Custom Redemption Day (Redemption Day > End Stake)
 - Create Stake
