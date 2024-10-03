@@ -13,7 +13,7 @@ The redemption day is set by the minter and can be set to any day where the 'Ext
 ### Are HEX Time Tokens fungible (HTT)?
 HEX Time Tokens that have a common redemption day are fungible, even if they are backed by distinct stakes. This is a key innovation of the protocol that enables broader liquidity and market efficiency of stakes as collateral.
 ### Can I still early end stake?
-Yes, Actuator wrapped HSI supports all the same operations as an HSI assuming there are no HTTs minted against the stake.
+Yes, Actuator wrapped HSI supports all the same operations as an HSI assuming there are no HTTs minted against the stake. If users have outstanding HTTs minted against their stake, the system prohibits early end stake to ensure 1:1 backing of HTTs.
 ### Why would I want to sell my minted HEX Time Tokens (HTT)?
 To unlock the stake value and monetize your stake at a fair price while retaining control of the stake. Additionally, you can always buy back the HEX time tokens and retire them and regain full control over your stake.
 ### Why would I want to buy HEX Time Tokens (HTT)?
@@ -49,11 +49,11 @@ Yes, and this allows you to regain full control and ownership of the stake.
 Yes, since Actuator is a wrapper around Hedron, you can wrap your existing HSI through Actuator and utilize all Actuator functionality. Additionally, you can unwrap a Actuator stake back to an HSI.
 ### Who pays for the gas to end stakes that are backing HEX Time Tokens?
 Once end day arrives, anyone can end a stake including the staker. However, after 3 days without stakeEnd being called, each additional day that passes results in an additional 1% of the stake rewards (up to 10%) going towards the user who calls stakeEnd (instead of the original staker). This ensures that even if gas is high, any user will have sufficient incentive to end a given stake as the rewards increase each day.
-### How is this different than pooled HEX stake protocols?
+### How is this different than pooled HEX staking protocols?
+- Pooled protocols are socialized staking whereas Actuator enables personal control over your own stakes. 
 - Pooled protocol tokens represent ownership over an indeterminate amount of HEX at a future date. HEX Time Tokens represent ownership over a determinate amount of HEX at a future date. i.e. 100 HTT-2500 is backed by exactly 100 HEX unlockable on day 2500. 
-- Pooled protocol tokens are priced inaccurately due to artificial supply constraints. While volatility is a benefit for many, if you're looking to buy/sell maxi tokens at a fair and predictable price, the volatility and price inefficiency is undesirable. Whereas Actuator avoids supply constraints by allowing for fluid creation of HEX Time Tokens ensuring the price is in line with HEX. 
-- Existing HSI owners cannot benefit from pooled staking protocols. 
-- Pooled protocols are socialized staking whereas Actuator enables personal control and flexibility over your own stakes. 
+- Pooled staking protocols are not compatible with existing HSIs. 
+- Pooled protocol are analogous to 'Closed-End Funds' due to the limited minting window. Actuator is more analogous to 'Open-End Funds' given HTTs can be freely minted. 
 
 ### what are Amplified Stakes?
 Amplified stakes are essentially levered HEX stakes which can be created through the Actuator protocol. Once a user creates a stake and extracts the HTTs, the can then go and sell the HTTs for HEX and re-stake the HEX and repeat this cycle. If HTTs are overpriced, then users take advantage of this mispricing and potentially achieve higher returns on the amplified HEX stakes. 
