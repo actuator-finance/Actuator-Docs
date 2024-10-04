@@ -24,3 +24,7 @@ sidebar_position: 9
   - 1 'HEX Time Token' (HTT) is always redeemable for 1 HEX at the designated redemption day - assuming all HTT holders invoke redemption no later than 14 days after redemption day
   - After minting HTTs against a stake, the quantity of HEX the staker forgoes at end stake is exactly equivalent to the quantity of HTTs created - assuming the stake is ended before the 'end stake subsidy' kicks in on the fourth day after end stake.
 
+
+
+###### Disclaimer
+Code audits alone are not a comprehensive assessment of all risks associated with a smart contract. It is essential to conduct your own research when evaluating the risk of any contract(s).
