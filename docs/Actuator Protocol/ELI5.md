@@ -15,7 +15,7 @@ Actuator is firstly a blockchain protocol that calculates the amount of HEX toke
 Once calculated, stakers can then create an equivalent amount of 'HEX Time Tokens' (HTT) which are fully-backed by the HEX tokens. HTTs are special because they can be redeemed 1 for 1 for the HEX tokens once redemption day (end stake) arrives. This means the price of HTTs will closely follow the price of HEX.
 
 This gives powerful new options for both stakers and casual HEX buyers. 
-- Stakers can now create HTTs and essentially sell a portion of their stake at a reasonable price. 
+- Stakers can now create HTTs and essentially sell a portion of their stake at an efficient price. 
 - Casual HEX investors can now buy HTTs at a discount to HEX and redeem their HTTs for HEX in the future.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3AAYDZUvmdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
