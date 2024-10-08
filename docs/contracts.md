@@ -8,13 +8,13 @@ sidebar_position: 8
 
 | Contract Name         | Address                          |
 |-----------------------|----------------------------------|
-| Actuator              | N/A                              |
-| HEXTimeTokenManager   | N/A                              |
-| MasterChef            | N/A                              |
-| HTT-3000              | N/A                              |
-| HTT-5000              | N/A                              |
-| HTT-7000              | N/A                              |
-| TimeLock              | N/A                              |
+| HEXTimeTokenManager   | 0x0d5d61FDDf84feFAB26f98164D8009022d740206 |
+| Actuator              | 0x85DF7cE20A4CE0cF859804b45cB540FFE42074Da |
+| MasterChef            | 0x4469A40D4243aC1c6cF350d99B6d69b49b5005F1 |
+| HTT-3000              | 0xE9E1340A2b31d5D2a2dB28FB854a794E106b430a |
+| HTT-5000              | 0xE2D03779147A32064511dd2b9D37F66f3EeFAd7C |
+| HTT-7000              | 0x47810bb3ECDc6b080CeB2d39E769F21Ff14AB7E9 |
+| TimeLock              | 0xFDA8246BcDb586c70afB9690cE1A4118F16901a1 |
 
 ### PulseChain Testnet Contracts
 
