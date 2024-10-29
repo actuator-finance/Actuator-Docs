@@ -51,7 +51,8 @@ Yes, and this allows you to regain full control and ownership of the stake.
 Yes, since Actuator is a wrapper around Hedron, you can wrap your existing HSI through Actuator and utilize all Actuator functionality. Additionally, you can unwrap a Actuator stake back to an HSI.
 ### Who pays for the gas to end stakes that are backing HEX Time Tokens?
 Once end day arrives, anyone can end a stake including the staker. However, after 3 days without stakeEnd being called, each additional day that passes results in an additional 1% of the stake rewards (up to 10%) going towards the user who calls stakeEnd (instead of the original staker). This ensures that even if gas is high, any user will have sufficient incentive to end a given stake as the rewards increase each day.
-### How is this different than pooled HEX staking protocols?
+### How is this different than pooled HEX staking protocols (e.g. Maximus)?
+![Alt text](/img/actr_maxi.png)
 - Pooled protocols are socialized staking whereas Actuator enables personal control over your own stakes. 
 - Pooled protocol tokens represent ownership over an indeterminate amount of HEX at a future date. HEX Time Tokens represent ownership over a determinate amount of HEX at a future date. i.e. 100 HTT-2500 is backed by exactly 100 HEX unlockable on day 2500. 
 - Pooled staking protocols are not compatible with existing HSIs. 
