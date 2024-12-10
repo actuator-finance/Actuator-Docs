@@ -8,7 +8,7 @@ sidebar_position: 8
 
 | Contract Name         | Address                          |
 |------------------------|----------------------------------|
-| Actuator               | 0x85DF7cE20A4CE0cF859804b45cB540FFE42074Da |
+| Actuator (ACTR)        | 0x85DF7cE20A4CE0cF859804b45cB540FFE42074Da |
 | HEXTimeTokenManager    | 0x0d5d61FDDf84feFAB26f98164D8009022d740206 |
 | MasterChef             | 0x4469A40D4243aC1c6cF350d99B6d69b49b5005F1 |
 | HTT-3000               | 0xE9E1340A2b31d5D2a2dB28FB854a794E106b430a |
