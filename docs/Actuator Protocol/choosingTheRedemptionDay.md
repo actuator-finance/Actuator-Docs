@@ -33,6 +33,8 @@ Users can also choose an advanced yet powerful strategy where the redemption day
 
 Unlike the first 2 approaches, this strategy is effectively a loan subject to liquidation if not repaid on time. In the event the original staker fails to return all outstanding HTTs by redemption day, the community will be eligible to EES the stake on redemption day. At which point, any HEX proceeds will be transferred to the original staker minus the early end stake penalty and outstanding HTTs.  
 
+It is important to note that, under this strategy, the selected redemption day must occur after mid-stake of the underlying stake. The reason being is that (while unlikely) the HEX protocol may potentially penalize 100% of the principal and rewards when end staking before mid-stake.
+
 <small>In this example, principal is 10,000 HEX, stake end is day 5000 and redemption is day 3800. Current day is set to 2500. <br/>
 Note the "Current Extractable Value" is the principal (10,000 HEX) due to redemption day falling before end stake.</small>
 ![Alt text](/img/RedemptionLessThanEnd.png)
