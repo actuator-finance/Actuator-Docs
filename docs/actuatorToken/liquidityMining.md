@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## Reward Allocation
 
-A total of **750 billion ACTR tokens** have been allocated specifically for liquidity mining over a span of three years:
+A total of **750 million ACTR tokens** have been allocated specifically for liquidity mining over a span of three years:
 
 - **Year 1**: 350,000,000 tokens
 - **Year 2**: 250,000,000 tokens
