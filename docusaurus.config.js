@@ -10,6 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Actuator Docs',
   favicon: 'img/favicon.ico',
+  githubHost: 'github-actuator', 
 
   // Set the production url of your site here
   // url: 'https://docs.actuator.finance',
