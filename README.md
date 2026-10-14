@@ -26,16 +26,17 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
+Run `npm run deploy` to build and publish to the `gh-pages` branch using SSH.
+The deployment wrapper uses the Actuator Finance Git identity. The build plugin
+removes the local checkout path from generated assets before content hashes are
+finalized. Use this wrapper instead of calling `docusaurus deploy` directly.
 
-```
-$ USE_SSH=true yarn deploy
+For source commits, configure this checkout with:
+
+```sh
+git config user.name "Actuator Finance"
+git config user.email "actuatorfinance@proton.me"
 ```
 
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+After a history cleanup, existing clones must be synchronized to the rewritten
+branches before pushing. Do not merge or push old branches back into the repository.

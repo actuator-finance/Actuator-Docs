@@ -9,6 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Actuator Docs',
+  plugins: ['./plugins/portable-build.cjs'],
   favicon: 'img/favicon.ico',
   githubHost: 'github-actuator', 
 
